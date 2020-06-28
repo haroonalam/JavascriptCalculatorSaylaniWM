@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <h2 style="text-align: center; margin:10px 0px 10px 0px; text-shadow: black 5px 3px 10px;">CALCULATOR</h2>
+        <div>
+            <input type="text" name="" id="result">
+        </div>
+
+        <div>
+            <button class="btn" onclick="getNum('7')">7</button>
+            <button class="btn" onclick="getNum('8')">8</button>
+            <button class="btn" onclick="getNum('9')">9</button>
+            <button class="btn" onclick="getNum('*')" style=" background-color: rgb(110, 167, 167);" ">X</button>
+        </div>
+        <div>
+            <button class="btn " onclick="getNum( '4') ">4</button>
+            <button class="btn " onclick="getNum( '5') ">5</button>
+            <button class="btn " onclick="getNum( '6') ">6</button>
+            <button class="btn " onclick="getNum( '-') " style=" background-color: rgb(110, 167, 167); " ">-</button>
+        </div>
+        <div>
+            <button class="btn " onclick="getNum( '1') ">1</button>
+            <button class="btn " onclick="getNum( '2') ">2</button>
+            <button class="btn " onclick="getNum( '3') ">3</button>
+            <button class="btn " onclick="getNum( '+') " style=" background-color: rgb(110, 167, 167); ">+</button>
+        </div>
+        <div>
+            <button class="btn " id="abtn" style="margin-left: 100px;" onclick="getNum( '0') ">0</button>
+            <button class="btn " style="margin-left:102px ; background-color: rgb(110, 167, 167); " onclick="getNum( '/') ">/</button>
+        </div>
+        <div>
+            <button class="btn" onclick="clearResult() " style="width: 48%; padding: 10px; margin-top: 10px; background-color: rgb(170, 22, 22); color: cornsilk; ">C</button>
+            <button class="btn " onclick="getResult( 'result') " style="width: 48%; padding: 10px;  margin-top: 10px; background-color: rgb(22, 160, 170); color: cornsilk; ">=</button>
+
+        </div>
+    </div>
+</body>
+<script src="app.js "></script>
+
+</html>
